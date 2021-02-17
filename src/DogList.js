@@ -5,7 +5,7 @@ class DogList extends Component {
     render() {
         return (
             <div className="DogList">
-                <h1 className="display-1 text-center">dogs list component</h1>
+                <h1 className="display-1 text-center">dogs list!</h1>
                 <div className="container">
                     <div className="row">
                         {this.props.dogs.map(d => (
