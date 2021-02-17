@@ -12,7 +12,7 @@ class Navbar extends Component {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
-                    <NavLink to="/dogs" className="navbar-brand">Dog App</NavLink>
+                    <NavLink to="/dogs" className="navbar-brand">Dog Shelter</NavLink>
 
                     <button
                         className="navbar-toggler"
