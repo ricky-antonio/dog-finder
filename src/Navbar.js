@@ -11,29 +11,29 @@ class Navbar extends Component {
         ))
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <NavLink to="/dogs" className="navbar-brand">Dog App</NavLink>
+                <div className="container">
+                    <NavLink to="/dogs" className="navbar-brand">Dog App</NavLink>
 
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle Navigation"
-                >
-                    <span className="navbar-toggler-icon" />
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item" key="home">
-                            <NavLink exact to={"/dogs"} className="nav-link navbar-dark" >Home</NavLink>
-                        </li>
-                        {dogLinks}
-                    </ul>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle Navigation"
+                    >
+                        <span className="navbar-toggler-icon" />
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item" key="home">
+                                <NavLink exact to={"/dogs"} className="nav-link navbar-dark" >Home</NavLink>
+                            </li>
+                            {dogLinks}
+                        </ul>
+                    </div>
                 </div>
-
-
             </nav>
         )
     }
